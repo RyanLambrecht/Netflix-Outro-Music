@@ -1,0 +1,23 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<style>
+  body { font: 13px system-ui, sans-serif; width: 320px; padding: 12px; }
+  label { display: block; margin: 10px 0 4px; font-weight: 600; }
+  input[type=text] { width: 100%; box-sizing: border-box; padding: 6px; }
+  button { margin-top: 12px; padding: 6px 12px; }
+  #status { margin-left: 8px; color: green; }
+</style>
+</head>
+<body>
+  <label><input type="checkbox" id="enabled"> Enabled</label>
+  <label for="keyword">Show title contains</label>
+  <input type="text" id="keyword" placeholder="Show name">
+  <label for="url">YouTube / YouTube Music link</label>
+  <input type="text" id="url" placeholder="https://music.youtube.com/watch?v=...">
+  <button id="save">Save</button><span id="status"></span>
+  <script src="defaults.js"></script>
+  <script src="popup.js"></script>
+</body>
+</html>
