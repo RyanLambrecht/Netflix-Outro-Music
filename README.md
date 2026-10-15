@@ -31,14 +31,3 @@ Start the episode by clicking play on the Netflix page yourself. Browsers only a
 
 - **CSP header is removed.** `rules.json` strips Netflix's `Content-Security-Policy` response header so the music iframe can load. That weakens the page's protections while the extension is installed. If you'd rather not, remove `rules.json` and the `declarativeNetRequest` entries from `manifest.json`, but the music may then be blocked.
 - **It can break.** It relies on Netflix's `data-uia` attributes (`watch-credits-seamless-button`, `player-skip-credits`, `video-title`, and a few post-play elements) and an undocumented metadata endpoint. Netflix can change these at any time. If nothing triggers, inspect the credits button, update the selector in `content.js`, or open an issue.
-- **Your settings stay local.** The link and keyword are saved in your browser's extension storage, not in this repo.
-
-## Files
-
-| File | Purpose |
-| --- | --- |
-| `manifest.json` | Extension manifest (MV3) |
-| `content.js` | Detection, muting, music iframe, unmute logic |
-| `defaults.js` | Default settings shared by the content script and popup |
-| `popup.html`, `popup.js` | Settings popup |
-| `rules.json` | CSP header removal for netflix.com |
