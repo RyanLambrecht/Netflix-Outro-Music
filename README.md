@@ -6,7 +6,7 @@ Not affiliated with or endorsed by Netflix or YouTube. This is a personal conven
 
 ## Install
 
-1. Download or clone this repo.
+1. Download and unzip or clone this repo.
 2. Open `chrome://extensions` (or `edge://extensions`) and turn on **Developer mode**.
 3. Click **Load unpacked** and select this folder (the one containing `manifest.json`).
 
