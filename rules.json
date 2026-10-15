@@ -4,11 +4,20 @@
     "priority": 1,
     "action": {
       "type": "modifyHeaders",
-      "responseHeaders": [{ "header": "content-security-policy", "operation": "remove" }]
+      "responseHeaders": [
+        {
+          "header": "content-security-policy",
+          "operation": "remove"
+        }
+      ]
     },
     "condition": {
-      "requestDomains": ["netflix.com"],
-      "resourceTypes": ["main_frame"]
+      "requestDomains": [
+        "netflix.com"
+      ],
+      "resourceTypes": [
+        "main_frame"
+      ]
     }
   }
 ]
